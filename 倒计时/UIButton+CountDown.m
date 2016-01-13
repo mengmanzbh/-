@@ -35,8 +35,8 @@
             
         }else{
         
-            int seconds = timeOut;
-            NSString * timeStr = [NSString stringWithFormat:@"%0.2d",seconds];
+            NSInteger seconds = timeOut;
+            NSString * timeStr = [NSString stringWithFormat:@"%0.2ld",(long)seconds];
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.backgroundColor = color;
